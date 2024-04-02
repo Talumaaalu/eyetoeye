@@ -1,7 +1,9 @@
 body {
+  background-image: url(https://www.dryfarmwines.com/cdn/shop/files/2023_7_DFW_Highlight_Monteversa_JPEG-018_1.jpg?v=1691623111&width=1946);
+    background-size: cover;
+    background-position: center;
   font-family:'Times New Roman', Times, serif;
-  background-color: #262626; /* Dark gray background */
-  color: #e8e8e8; /* Light text color */
+  color: #e8e8e8; 
 }
 
 header {
