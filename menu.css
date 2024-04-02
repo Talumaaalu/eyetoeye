@@ -1,0 +1,104 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.established {
+    font-style: italic;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: #a6814c;
+    border: none;
+    margin: 40px 0;
+}
+
+.bottom-line {
+    margin-top: 50px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item p {
+    margin: 0;
+}
+
+.flavor, .dessert, .beverage {
+    flex: 0 0 70%;
+    text-align: left;
+    font-size: 20px;
+    color: #333;
+}
+
+.price {
+    flex: 0 0 25%;
+    text-align: right;
+    font-size: 20px;
+    color: #a6814c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+a {
+    color: #a6814c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5b3e22;
+}
