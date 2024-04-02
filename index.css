@@ -1,17 +1,16 @@
-/* Reset styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global styles */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: #e9d6cd;
+    background-color: khaki;
 }
 
 nav {
@@ -32,8 +31,8 @@ ul li {
 }
 
 ul li a {
-    color: black; /* Changed color to black */
-    font-weight: bold; /* Added font weight as bold */
+    color: black; 
+    font-weight: bold;
 }
 
 .content {
@@ -119,7 +118,7 @@ img {
     background-color: #555;
 }
 
-/* Dark mode styles */
+
 .theme-toggle input[type="checkbox"] {
     display: none;
 }
