@@ -11,12 +11,12 @@ header {
 
 #title {
   font-size: 2.5em;
-  color: #ffac4b; /* Orange title color */
+  color: #ffac4b; 
 }
 
 #description {
   font-size: 1.2em;
-  color: #d1d1d1; /* Light gray description color */
+  color: #d1d1d1;
 }
 
 .form-group {
@@ -26,7 +26,7 @@ header {
 label {
   display: block;
   font-weight: bold;
-  color: #e8e8e8; /* Light text color */
+  color: #e8e8e8; 
 }
 
 input[type="text"],
@@ -38,20 +38,20 @@ input[type="number"],
 textarea {
   width: 100%;
   padding: 15px;
-  border: 1px solid #808080; /* Medium gray border color */
+  border: 1px solid #808080;
   border-radius: 5px;
   box-sizing: border-box;
   margin-top: 5px;
   font-size: 1em;
-  background-color: #404040; /* Darker gray input background */
+  background-color: #404040;
   color: #e8e8e8; /* Light text color */
 }
 
 button {
   width: 100%;
   padding: 15px;
-  background-color: #ff6f00; /* Dark orange button color */
-  color: #e8e8e8; /* Light text color */
+  background-color: #ff6f00;
+  color: #e8e8e8;\
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -60,7 +60,7 @@ button {
 }
 
 button:hover {
-  background-color: #ff4500; /* Darker orange button color on hover */
+  background-color: #ff4500; 
 }
 
 @media screen and (min-width: 600px) {
@@ -68,8 +68,8 @@ button:hover {
       max-width: 600px;
       margin: 0 auto;
       padding: 40px;
-      background-color: #333333; /* Darker gray form background */
+      background-color: #333333; 
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly darker box shadow */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 }
