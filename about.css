@@ -1,54 +1,98 @@
+/* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color:  #e9d6cd;
-    line-height: 1.6;
-  }
-  
-  .header {
-    background-color: burlywood;
-    color: navy;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
-  
-  .gallery {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
-  
-  .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-  }
-  
-  .gallery figcaption {
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  
-  .gallery p {
-    color: #444;
-    margin-bottom: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .gallery {
-      padding: 0 10px;
-    }
-  }
-  figcaption {
-      text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #a89964;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 25px;
+  color: #333;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Apply grid layout to images */
+.gallery img {
+  max-width: 50%; /* Update to 50% */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  grid-column: span 2; /* Set images to span 2 columns in the grid */
+}
+
+table {
+  width: 100%;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background-color: #a6814c;
+  color: #fff;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ccc;
+}
+
+.price {
+  font-weight: bold;
+  color: #a6814c;
+}
+
+.description {
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.theme-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.theme-toggle label::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+
+}
