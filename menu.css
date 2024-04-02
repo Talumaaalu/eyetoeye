@@ -1,104 +1,115 @@
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color:seagreen;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 48px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 h2 {
-    font-size: 36px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 36px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .established {
-    font-style: italic;
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
+  font-style: italic;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
 }
 
 .menu {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .menu-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .column {
-    flex: 1;
-    margin: 0 10px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
 }
 
 hr {
-    height: 2px;
-    background-color: #a6814c;
-    border: none;
-    margin: 40px 0;
+  height: 2px;
+  background-color: #a6814c;
+  border: none;
+  margin: 40px 0;
 }
 
 .bottom-line {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    transition: transform 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .item:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .item p {
-    margin: 0;
+  margin: 0;
 }
 
 .flavor, .dessert, .beverage {
-    flex: 0 0 70%;
-    text-align: left;
-    font-size: 20px;
-    color: #333;
+  text-align: left;
+  font-size: 20px;
+  color: #333;
 }
 
 .price {
-    flex: 0 0 25%;
-    text-align: right;
-    font-size: 20px;
-    color: #a6814c;
+  text-align: right;
+  font-size: 20px;
+  color: #a6814c;
+}
+
+.description {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: calc(100% - 30px);
+  display: none;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  z-index: 1;
+}
+
+.item:hover .description {
+  display: block;
 }
 
 footer {
-    text-align: center;
-    margin-top: 50px;
-    padding-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 20px;
 }
 
 a {
-    color: #a6814c;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #5b3e22;
-}
+  color: #a6814c;
+  text
