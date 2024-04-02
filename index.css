@@ -1,16 +1,17 @@
-
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global styles */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: khaki;
+    background-color: rgb(204, 161, 104);
 }
 
 nav {
@@ -31,8 +32,8 @@ ul li {
 }
 
 ul li a {
-    color: black; 
-    font-weight: bold;
+    color: black; /* Changed color to black */
+    font-weight: bold; /* Added font weight as bold */
 }
 
 .content {
@@ -48,12 +49,12 @@ ul li a {
 }
 
 .content h2 {
-    color: purple;
+    color: rgb(179, 27, 27);
 }
 
 hr {
     margin-top: 30px;
-    width: 20%;
+    width: 55%;
     height: 6px;
     background: #000;
 }
@@ -73,9 +74,10 @@ hr {
 
 button {
     margin-top: 20px;
-    background: burlywood;
+    background: rgb(124, 105, 77);
     border: none;
     outline: .04em;
+    color: #000;
     font-size: 20px;
     padding: 15px 20px;
     border-radius: 5px;
@@ -118,7 +120,7 @@ img {
     background-color: #555;
 }
 
-
+/* Dark mode styles */
 .theme-toggle input[type="checkbox"] {
     display: none;
 }
