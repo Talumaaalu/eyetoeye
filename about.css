@@ -1,11 +1,10 @@
-/* Reset styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global styles */
 body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #a89964;
@@ -27,13 +26,12 @@ h1 {
   padding: 20px;
 }
 
-/* Apply grid layout to images */
 .gallery img {
-  max-width: 50%; /* Update to 50% */
+  max-width: 50%;
   height: auto;
   display: block;
   margin: 0 auto;
-  grid-column: span 2; /* Set images to span 2 columns in the grid */
+  grid-column: span 2; 
 }
 
 table {
