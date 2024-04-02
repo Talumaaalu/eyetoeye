@@ -1,80 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasta Paradiso - Menu</title>
-    <link rel="stylesheet" href="menu.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu with Descriptions</title>
+<link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <main class="menu">
-        <h1>Our Menu</h1>
-        <p class="established">Since 2019</p>
-        <hr>
-        <section class="menu-items">
-            <div class="column">
-                <h2>Pastas</h2>
-                <div class="item">
-                    <p class="flavor">Spaghetti Bolognese</p><p class="price">₩12,000</p>
-                </div>
-                <div class="item">
-                    <p class="flavor">Fettuccine Alfredo</p><p class="price">₩14,000</p>
-                </div>
-                <div class="item">
-                    <p class="flavor">Penne Arrabiata</p><p class="price">₩11,000</p>
-                </div>
-                <div class="item">
-                    <p class="flavor">Linguine Carbonara</p><p class="price">₩13,000</p>
-                </div>
-                <div class="item">
-                    <p class="flavor">Rigatoni Amatriciana</p><p class="price">₩12,000</p>
-                </div>
-            </div>
-            <div class="column">
-                <h2>Lasagna</h2>
-                <div class="item">
-                    <p class="flavor">Classic Beef Lasagna</p><p class="price">₩16,000</p>
-                </div>
-                <div class="item">
-                    <p class="flavor">Vegetarian Lasagna</p><p class="price">₩15,000</p>
-                </div>
-            </div>
-            <div class="column">
-                <h2>Desserts</h2>
-                <div class="item">
-                    <p class="dessert">Tiramisu</p><p class="price">₩8,000</p>
-                </div>
-                <div class="item">
-                    <p class="dessert">Cannoli</p><p class="price">₩7,000</p>
-                </div>
-                <div class="item">
-                    <p class="dessert">Panna Cotta</p><p class="price">₩9,000</p>
-                </div>
-            </div>
-            <div class="column">
-                <h2>Beverages</h2>
-                <div class="item">
-                    <p class="beverage">Italian Soda (Assorted Flavors)</p><p class="price">₩5,000</p>
-                </div>
-                <div class="item">
-                    <p class="beverage">Terra</p><p class="price">₩4,000</p>
-                </div>
-                <div class="item">
-                    <p class="beverage">Soju</p><p class="price">₩4,000</p>
-                </div>
-                <div class="item">
-                    <p class="beverage">CocaCola</p><p class="price">₩2,000</p>
-                </div>
-                
-            </div>
-        </section>
-    </main>
-    <hr class="bottom-line">
-    <footer>
-        <p>
-            <a href="index.html" target="_blank">Thank You</a>
-            <p>&copy;Pasta Paradiso - Ulsan, South Korea</p>
-        </p>
-    </footer>
+
+<!-- Menu Items -->
+<div class="column">
+    <h2>Pastas</h2>
+    <div class="item" onclick="toggleDescription('linguine-carbonara')">
+      <p class="flavor">Linguine Carbonara</p>
+      <p class="price">13.0₩</p>
+      <div class="description" id="linguine-carbonara-description">
+        <p>Enjoy linguine pasta coated in a rich and creamy carbonara sauce made with eggs, cheese, pancetta, and black pepper. This Italian classic is a symphony of flavors and textures, with the silky sauce clinging to each strand of pasta for a truly indulgent experience.</p>
+      </div>
+    </div>
+
+    <div class="item" onclick="toggleDescription('spaghetti-bolognese')">
+        <p class="flavor">Spaghetti Bolognese</p>
+        <p class="price">12.0₩</p>
+        <div class="description" id="spaghetti-bolognese-description">
+          <p>A classic Italian dish featuring al dente spaghetti pasta smothered in rich, meaty Bolognese sauce, made with tomatoes, ground beef, and aromatic herbs. This hearty and satisfying dish is a favorite among pasta lovers.</p>
+        </div>
+      </div>
+    
+      <div class="item" onclick="toggleDescription('fettuccine-alfredo')">
+        <p class="flavor">Fettuccine Alfredo</p>
+        <p class="price">14.9₩</p>
+        <div class="description" id="fettuccine-alfredo-description">
+          <p>Indulge in creamy fettuccine pasta tossed with a velvety Alfredo sauce made from butter, heavy cream, and Parmesan cheese. This decadent dish is both luxurious and comforting, perfect for a special occasion or a cozy night in.</p>
+        </div>
+      </div>
+    
+      <div class="item" onclick="toggleDescription('penne-arrabiata')">
+        <p class="flavor">Penne Arrabiata</p>
+        <p class="price">11.9₩</p>
+        <div class="description" id="penne-arrabiata-description">
+          <p>Penne pasta served with a spicy Arrabiata sauce made from tomatoes, garlic, chili peppers, and olive oil. The fiery kick of this flavorful sauce pairs perfectly with the tender pasta, creating a deliciously bold dish that will awaken your taste buds.</p>
+        </div>
+      </div>
+    
+      <div class="item" onclick="toggleDescription('rigatoni-amatriciana')">
+        <p class="flavor">Rigatoni Amatriciana</p>
+        <p class="price">12.0₩</p>
+        <div class="description" id="rigatoni-amatriciana-description">
+          <p>Rigatoni pasta tossed in a savory Amatriciana sauce featuring tomatoes, pancetta, onions, and pecorino cheese. This robust and flavorful dish is a delightful combination of sweet, salty, and tangy notes that will leave you craving more.</p>
+        </div>
+      </div>
+
+    
+
+<div class="column">
+    <h2>Lasagna</h2>
+    <div class="item" onclick="toggleDescription('classic-beef-lasagna')">
+      <p class="flavor">Classic Beef Lasagna</p>
+      <p class="price">16.9₩</p>
+      <div class="description" id="classic-beef-lasagna-description">
+        <p>Layers of tender lasagna noodles, savory ground beef, marinara sauce, and creamy ricotta cheese, topped with melted mozzarella. This comforting and satisfying dish is a timeless favorite, perfect for sharing with family and friends.</p>
+      </div>
+    </div>
+  
+    <div class="item" onclick="toggleDescription('vegetarian-lasagna')">
+      <p class="flavor">Vegetarian Lasagna</p>
+      <p class="price">15.0₩</p>
+      <div class="description" id="vegetarian-lasagna-description">
+        <p>A delicious vegetarian twist on the classic lasagna, featuring layers of lasagna noodles, roasted vegetables, marinara sauce, and creamy béchamel. This hearty and wholesome dish is packed with flavor and nutrients, making it a satisfying option for vegetarians and meat-lovers alike.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <h2>Desserts</h2>
+    <div class="item" onclick="toggleDescription('tiramisu')">
+      <p class="dessert">Tiramisu</p>
+      <p class="price">8.0₩</p>
+      <div class="description" id="tiramisu-description">
+        <p>A heavenly Italian dessert consisting of layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder. This elegant and indulgent treat is the perfect balance of sweetness and richness, with a delicate coffee flavor that lingers on the palate.</p>
+      </div>
+    </div>
+  
+    <div class="item" onclick="toggleDescription('cannoli')">
+      <p class="dessert">Cannoli</p>
+      <p class="price">7.0₩</p>
+      <div class="description" id="cannoli-description">
+        <p>Crispy pastry shells filled with a sweet and creamy ricotta cheese filling, studded with chocolate chips and dusted with powdered sugar. These iconic Italian pastries are a delightful combination of textures and flavors, making them a beloved dessert choice.</p>
+      </div>
+    </div>
+  
+    <div class="item" onclick="toggleDescription('panna-cotta')">
+      <p class="dessert">Panna Cotta</p>
+      <p class="price">9.0₩</p>
+      <div class="description" id="panna-cotta-description">
+        <p>A silky-smooth Italian dessert made from cream, sugar, and gelatin, infused with vanilla bean and served with a berry compote. This delicate and elegant dessert has a subtle sweetness and a creamy texture that melts in your mouth, leaving you feeling satisfied and refreshed.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <h2>Beverages</h2>
+    <div class="item" onclick="toggleDescription('italian-soda')">
+      <p class="beverage">Italian Soda (Assorted Flavors)</p>
+      <p class="price">5.0₩</p>
+      <div class="description" id="italian-soda-description">
+        <p>Sparkling soda water flavored with a variety of syrups, such as strawberry, raspberry, or lemon, for a refreshing and effervescent beverage option.</p>
+      </div>
+    </div>
+  
+    <div class="item" onclick="toggleDescription('terra')">
+      <p class="beverage">Terra</p>
+      <p class="price">4.0₩</p>
+      <div class="description" id="terra-description">
+        <p>A premium Italian mineral water sourced from natural springs, known for its crisp and clean taste. Enjoyed chilled, Terra water is a refreshing accompaniment to any meal.</p>
+      </div>
+    </div>
+  
+    <div class="item" onclick="toggleDescription('soju')">
+      <p class="beverage">Soju</p>
+      <p class="price">4.0₩</p>
+      <div class="description" id="soju-description">
+        <p>A popular Korean alcoholic beverage made from fermented rice, barley, or wheat, with a smooth and slightly sweet taste. Soju is often enjoyed with meals or as a social drink among friends.</p>
+      </div>
+    </div>
+  
+    <div class="item" onclick="toggleDescription('cocacola')">
+      <p class="beverage">CocaCola</p>
+      <p class="price">2.0₩</p>
+      <div class="description" id="cocacola-description">
+        <p>The classic carbonated soft drink, known for its iconic flavor and refreshing fizziness. Enjoyed ice-cold, CocaCola is a timeless beverage choice that pairs well with any dish.</p>
+      </div>
+    </div>
+  </div>
+  
+<script>
+function toggleDescription(id) {
+  var description = document.getElementById(id + '-description');
+  if (description.style.display === "none") {
+    description.style.display = "block";
+  } else {
+    description.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
